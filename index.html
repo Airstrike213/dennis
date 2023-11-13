@@ -136,17 +136,23 @@
 <div class="daw-container daw-padding-32" id="contact">
     <h3 class="daw-border-bottom daw-border-light-grey daw-padding-16">Contact</h3>
     <p>Lets get in touch and talk about your next project.</p>
-    <form action="script.php" method="post">
-        <input class="daw-input daw-border" type="text" placeholder="Name" required name="Name">
-        <input class="daw-input daw-section daw-border" type="text" placeholder="Email" required name="Email">
-        <input class="daw-input daw-section daw-border" type="text" placeholder="Subject" required name="Subject">
-        <input class="daw-input daw-section daw-border" type="text" placeholder="Comment" required name="Comment">
-        <button class="daw-button daw-black daw-section" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-    </form>
+<form
+  action="https://formspree.io/f/xpzgewvk"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 </div>
-  
+
 <!-- Image of location/map -->
 <div class="daw-container">
   <img src="tea.jpg" class="daw-image" style="width:100%">
